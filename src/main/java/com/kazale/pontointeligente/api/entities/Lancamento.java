@@ -94,7 +94,7 @@ public class Lancamento {
 	public Funcionario getFuncionario() {
 		return funcionario;
 	}
-	public void setFuncionarios(Funcionario funcionario) {
+	public void setFuncionario(Funcionario funcionario) {
 		this.funcionario = funcionario;
 	}
 	@PreUpdate
