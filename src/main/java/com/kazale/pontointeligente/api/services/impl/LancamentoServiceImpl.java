@@ -9,11 +9,12 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
 
 import com.kazale.pontointeligente.api.entities.Lancamento;
 import com.kazale.pontointeligente.api.repositories.LancamentoRepository;
 import com.kazale.pontointeligente.api.services.LancamentoService;
-
+@Service
 public class LancamentoServiceImpl implements LancamentoService {
 	private static final Logger log = LoggerFactory.getLogger(EmpresaServiceImpl.class);
 	@Autowired
