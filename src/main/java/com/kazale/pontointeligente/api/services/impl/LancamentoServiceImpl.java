@@ -25,7 +25,7 @@ public class LancamentoServiceImpl implements LancamentoService {
 		return this.lancamentoRepository.findByFuncionarioId(funcionarioId, pageRequest);
 	}
 	
-	@Cacheable("lancamentoPorId")
+	@Cacheable("lancamentoPorId")	
 	public Optional<Lancamento> buscarPorId(Long id) {
 		log.info("Buscando um lançamento pelo ID {}", id);
 		return this.lancamentoRepository.findById(id);
